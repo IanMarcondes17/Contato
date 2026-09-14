@@ -1,76 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meus Links Profissionais</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-                body{
-                    background-color: #0f172a;
-                    color: #f8fafc;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 20px;
-                }
-                .container{
-                    text-align: center;
-                    max-width: 400px;
-                    width: 100%;
-                    background-color: #1e293b;
-                    padding: 30px;
-                    border-radius: 16px;
-                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-                }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Profissionais | Dev Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border: 1px solid #334155;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 22px;
+            margin-bottom: 6px;
+            color: #38bdf8;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #334155;
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .btn-link:hover {
+            background-color: #475569;
+            border-color: #38bdf8;
+            transform: translateY(-2px);
+        }
+        .btn-whatsapp {
+            background-color: #16a34a;
+        }
+        .btn-whatsapp:hover {
+            background-color: #15803d;
+            border-color: #4ade80;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Foto de perfil via URL pública -->
+        <img src="https://github.com/github.png" alt="Foto de Perfil" class="profile-img">
+        
+        <h1>Seu Nome</h1>
+        <p>Desenvolvedor Web & Soluções Digitais</p>
 
-                h1{
-                    font-size: 24px;
-                    margin-bottom: 20px;
-                    color: #38bdf8;
-                }
-                
-                p{
-                    color: #94a3b8;
-                    font-size: 14px;
-                    margin-bottom: 24px;
-                }
+        <a href="https://wa.me/5512996855884?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento!" target="_blank" class="btn-link btn-whatsapp">
+            📱 Conversar no WhatsApp
+        </a>
 
-                .btn-link{
-                    display:block;
-                    background-color: #2563eb;
-                    color:white;
-                    text-decoration: none;
-                    padding: 14px;
-                    margin: 12px 0;
-                    border-radius: 8px;
-                    font-weight: bold;
-                    transition: 0.3s;
-                }
+        <a href="#" class="btn-link">
+            💻 Criar Site para minha Empresa
+        </a>
 
-                .btn-link:hover{
-                    background-color: #1d4ed8;
-                    transform:translateY(-2px);
-                }
-                .btn-whatsapp{
-                    background-color:#16a34a;
-                }
-                .btn-whatsapp:hover{
-                    background-color:#15803d;
-                }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Marcondes_Negócios</h1>
-            <p>Desenvolvimento web & Soluções Digitais</p>
-            <a href="https://wa.me/5512996855884?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target="_blank" class="btn-link btn-whatsapp">📱WhatsApp</a>
-            <a href="#" class="btn-link">💼 Meus Serviços</a>
-            <a href="#" class="btn-link">🌐 Meu Portfólio</a>
+        <a href="#" class="btn-link">
+            📊 Organização de Planilhas
+        </a>
 
-        </div>
-    </body>
+        <a href="#" class="btn-link">
+            🌐 Ver Meu Portfólio
+        </a>
+    </div>
+</body>
+</html>
