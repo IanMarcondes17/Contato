@@ -69,6 +69,8 @@ p{
 }
 /* Estilo do Botão de Tema */
 .btn-theme {
+    display: block;
+    margin: 0 auto 20px auto;
     background-color: transparent;
     border: 1px solid #38bdf8;
     color: #38bdf8;
@@ -152,8 +154,15 @@ input:focus, select:focus {
 }
 
 .btn-submit:hover {
-    background-color: #0284c7;
-    color: #ffffff;
+    background-color: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+    transform: translateY(-2px);
+   
+}
+
+.btn-submit:hover svg {
+    transform: translateX(3px) translateY(-3px);
+    transition: transform 0.3s ease;
 }
 
 /* Modo Claro Ajustes para o formulário */
@@ -161,4 +170,32 @@ body.light-mode input, body.light-mode select {
     background-color: #f8fafc;
     color: #0f127a;
     border-color: #cdb5e1;
+}
+.btn-submit {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.15);
+
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(56, 198, 248, 0.2);
 }
