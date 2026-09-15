@@ -8,8 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <!-- Foto de perfil via URL pública -->
-        <img src="imagen.jpg" alt="Foto de perfil" class="profile-img">
+        <!-- Botão para alternar tema -->
+        <button id="theme-toggle" class="btn-theme">🌙 Modo Claro</button>
+
+        <img src="imagen.jpg" alt="Foto de Perfil" class="profile-img">
+        
         <h1>Seu Nome</h1>
         <p>Desenvolvedor Web & Soluções Digitais</p>
 
@@ -17,17 +20,23 @@
             📱 Conversar no WhatsApp
         </a>
 
-        <a href="#" class="btn-link">
-            💻 Criar Site para minha Empresa
-        </a>
-
-        <a href="#" class="btn-link">
-            📊 Organização de Planilhas
-        </a>
-
-        <a href="#" class="btn-link">
-            🌐 Ver Meu Portfólio
-        </a>
+        <!-- Formulário de Captação de Clientes -->
+        <div class="form-container">
+            <h2>Solicitar Orçamento</h2>
+            <form id="contact-form">
+                <input type="text" id="cliente-nome" placeholder="Seu Nome ou Empresa" required>
+                <input type="tel" id="cliente-whatsapp" placeholder="Seu WhatsApp (com DDD)" required>
+                <select id="cliente-servico" required>
+                    <option value="">Selecione o serviço...</option>
+                    <option value="Cartão de Links / Bio">Cartão de Links / Bio</option>
+                    <option value="Landing Page Completa">Landing Page Completa</option>
+                    <option value="Organização de Planilhas">Organização de Planilhas</option>
+                </select>
+                <button type="submit" class="btn-submit">Enviar Solicitação</button>
+            </form>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
